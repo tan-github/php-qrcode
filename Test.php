@@ -12,7 +12,11 @@ class Test
 {
     public function getTest()
     {
-        var_dump(\Qrcode\PQrcode::png('PHP QR Code :)'));
+//        var_dump(\Qrcode\PQrcode::png('PHP QR Code :)'));
+
+        //使用类
+        $class = \Qrcode\PQrcode::getQRcode();
+        var_dump($class::png('PHP QR Code :)'));
     }
 
 
